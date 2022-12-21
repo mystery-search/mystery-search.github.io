@@ -16,4 +16,43 @@
   src="https://www.youtube.com/embed?listType=playlist&list=UUbBTLu85N2NjiItoDWYFmbA">
 </iframe>
    </body>
+      <head>
+        <script>
+        document.addEventListener("DOMContentLoaded", function() {
+
+var iframe = document.createElement('iframe');
+iframe.src = 'https://www.youtube.com/embed?listType=playlist&list=UUbBTLu85N2NjiItoDWYFmbA';
+iframe.width = '560';
+iframe.height = '315';
+iframe.frameborder = '0';
+iframe.allowfullscreen = 'allowfullscreen';
+document.body.appendChild(iframe);
+
+
+
+
+
+var title = document.createElement('div');
+title.innerHTML = 'Latest from Captains Crew';
+title.style.color = 'black';
+document.body.appendChild(title);
+
+document.body.insertBefore(title, iframe);
+
+title.style.fontSize = '30px';
+
+title.innerHTML = 'Latest from <span style="color:red">Captains</span> Crew';
+
+title.innerHTML = 'Latest from <span style="color:red">Captains</span> <span style="color:white">Crew</span>';
+
+title.style.textAlign = 'center';
+iframe.style.marginLeft = 'auto';
+iframe.style.marginRight = 'auto';
+iframe.style.display = 'block';
+});
+        </script>
+    </head>
+    <body style="margin: 0;">
+
+    </body>
 </html>
