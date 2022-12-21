@@ -11,6 +11,33 @@
       </div>
     <script async src="https://cse.google.com/cse.js?cx=33f4a7076fadf180e">
     </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+
+var welcome = document.createElement('div');
+welcome.innerHTML = 'Latest from Captains Crew';
+document.body.appendChild(welcome);
+
+var video = document.createElement('iframe');
+video.src = 'https://www.youtube.com/embed/videoseries?list=UCbBTLu85N2NjiItoDWYFmbA';
+video.width = '560';
+video.height = '315';
+video.frameborder = '0';
+video.allow = 'autoplay; encrypted-media';
+video.allowfullscreen = 'true';
+document.body.appendChild(video);
+
+document.body.style.textAlign = 'center';
+
+document.body.style.display = 'flex';
+document.body.style.justifyContent = 'center';
+document.body.style.alignItems = 'center';
+
+document.body.style.flexDirection = 'column';
+
+welcome.style.fontSize = '50px';
+});
+        </script>
     <div class="gcse-search" style="background-color: #FFFFFF"></div>
    </body>
 </html>
